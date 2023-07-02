@@ -1,0 +1,9 @@
+package DAO;
+
+public interface ClaseDao {
+    public List<Clase> getAllClasses() throws SQLException;
+    public Clase fetchOneClass(String id) throws SQLException;
+    public SQLState updateOneClass(JSONObject jsonObject)throws SQLException;
+    public SQLState deleteOneClass(JSONObject jsonObject)throws SQLException;
+    public SQLState saveNewClass(JSONObject jsonObject)throws SQLException;
+}

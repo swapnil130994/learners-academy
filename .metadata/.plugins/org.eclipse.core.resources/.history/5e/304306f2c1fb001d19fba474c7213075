@@ -1,0 +1,12 @@
+package DAO;
+
+import java.util.List;
+
+public interface ClassReportDao {
+    public List<ClassFull> getAllStudents() throws SQLException;
+    public List<Clss> getAllClasses() throws SQLException;
+    public Student fetchOneStudent(String id) throws SQLException;
+    public SQLState updateOneStudent(JSONObject jsonObject)throws SQLException;
+    public SQLState deleteOneStudent(JSONObject jsonObject)throws SQLException;
+    public SQLState saveNewStudent(JSONObject jsonObject)throws SQLException;
+}

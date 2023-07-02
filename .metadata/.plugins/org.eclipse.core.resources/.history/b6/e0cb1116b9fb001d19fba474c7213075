@@ -1,0 +1,6 @@
+package DAO;
+
+public interface LoginDao {
+    public boolean verifyCredentials(User user) throws SQLException;
+
+}

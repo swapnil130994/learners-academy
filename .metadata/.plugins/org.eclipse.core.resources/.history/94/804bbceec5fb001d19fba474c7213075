@@ -1,0 +1,5 @@
+package DAO;
+
+public interface ClassSubjectDao {
+    public List<ClassSubject> getAllClassSubjects() throws SQLException;
+}
